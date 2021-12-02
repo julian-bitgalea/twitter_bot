@@ -78,11 +78,11 @@ def get_btc_price_BITSO(currency_code):
     books = get_available_books_BITSO()
     book_key = f"btc_{currency_code}"
     reverse_book_key = f"{currency_code}_btc"
-    print(book_key)
-    if book_key not in books:
-        logger.info(f"Book {book_key} is not available for querying. ")
-    elif reverse_book_key in books:
+
+    if reverse_book_key in books:
         execute_btc_price_request(reverse_book_key)
+    elif book_key not in books:
+        logger.info(f"Book {book_key} is not available for querying. ")
     else:
         execute_btc_price_request(book_key)
 
