@@ -2,3 +2,4 @@ tweepy~=4.4.0
 requests~=2.26.0
 schedule~=1.1.0
 python-dotenv~=0.19.2
+json_flatten
