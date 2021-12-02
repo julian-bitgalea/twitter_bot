@@ -5,6 +5,7 @@ Recibe por parametro codigos de divisas (ie ars, usd, etc), busca esos valores e
 
 Para correrlo, con python3 instalado, desde una terminal: 
 
+```bash
 #Clonar el repo
 git clone https://github.com/julian-bitgalea/twitter_bot.git;
 
@@ -23,3 +24,4 @@ pip install -r requirements.txt;
 #Ejecutar 
 python twitter_bot.py --help;
 python twitter_bot.py --fiat_codes ars eur usd cad;
+```
